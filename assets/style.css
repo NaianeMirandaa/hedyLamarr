@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lexend:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon', serif;
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Lemon';
+    font-size: max(24px,5.5vw);
+    margin: 0.5rem 0;
+}
+h2{
+    font-size: max(18px,2.2vw);
+}
+h3{
+    font-size: max(14px,1.8vw);
+}
+.colagem_hedy{
+    width: max(280px,45vw);
+}
+.text_block{
+    width: max(280px,45vw);
+    text-align: center;
+}
