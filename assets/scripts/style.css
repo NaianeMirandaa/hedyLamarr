@@ -33,14 +33,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(imagens/fundo_aquarela.jpg);
+    background: url(../imagens/fundo_aquarela.jpg);
     background-size: cover;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 20vh;
 }
 h1{
     font-family: 'Lemon';
