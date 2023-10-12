@@ -63,13 +63,90 @@ p{
 button{
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
 .colagem_hedy{
     width: max(280px,35vw);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .text_block{
     width: max(280px,45vw);
     text-align: center;
+    margin-bottom: 5vh;
 }
+.conteudo_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-112deg);
+}
+.botao_secundario, .botao_principal{
+    width: max(30px,2vw);
+    height: max(30px,2vw);
+    background-color: var(--pretty_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.2);
+    transform: rotate(112deg);
+}
+.botao_principal{
+    background-color: var(--dark_color);
+    fill: #DFDBE2;
+    cursor: pointer;
+}
+
+.botao_principal:hover{
+    transform: rotate(112deg) scale(1.1);
+    
+}
+.botao_secundario:hover{
+    transform: scale(1.1);
+}
+
+span{
+    position: absolute;
+    transform: rotate(calc(var(--i)*180deg/4)) translateY(120px);
+}
+
+.botao_secundario{
+    transform: (calc(var(--i)*180deg/-4))
+}
+#heart{
+    transform: rotate(-68deg);
+}
+#heart:hover{
+    transform: rotate(-68deg) scale(1.1);
+}
+#movie{
+    transform: rotate(-22deg);
+}
+#movie:hover{
+    transform: rotate(-22deg) scale(1.1)
+}
+#wireless{
+    transform: rotate(22deg);
+}
+#wireless:hover{
+    transform: rotate(22deg) scale(1.1)
+}
+#curious{
+    transform: rotate(68deg);
+}
+#curious:hover{
+    transform: rotate(68deg) scale(1.1)
+}
+
 footer{
     display: flex;
     justify-content: end;
