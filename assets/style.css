@@ -40,7 +40,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 h1{
     font-family: 'Lemon';
@@ -75,6 +75,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 }
 .text_block{
     width: max(280px,45vw);
