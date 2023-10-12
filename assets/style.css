@@ -1,38 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lexend:wght@200;400&display=swap');
 
+:root{
+    --dark_color: #111111;
+    --pretty_color: #d17ab0;
+}
+
+@keyframes pulsar {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.5;
+    }
+}
+
+@keyframes mudar_cor {
+    0%{
+        fill: var(--dark_color);
+    }
+    100%{
+        fill: var(--pretty_color)
+    }
+}
+
 *{
     margin: 0;
-    box-sizing: border-box;
     font-family: 'Lemon', serif;
     font-family: 'Lexend', sans-serif;
 }
 body{
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(imagens/fundo_aquarela.jpg);
+    background-size: cover;
 }
 main{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15vh;
 }
 h1{
     font-family: 'Lemon';
-    font-size: max(24px,5.5vw);
+    font-size: max(24px,5vw);
     margin: 0.5rem 0;
+    color: var(--dark_color);
 }
 h2{
-    font-size: max(18px,2.2vw);
+    font-size: max(18px,1.9vw);
+    color: var(--dark_color);
 }
 h3{
-    font-size: max(14px,1.8vw);
+    font-size: max(14px,1.6vw);
+    color: var(--dark_color);
+}
+p{
+    font-size: max(12px,1.3vw);
+    color: var(--dark_color);
+}
+button{
+    cursor: pointer;
 }
 .colagem_hedy{
-    width: max(280px,45vw);
+    width: max(280px,35vw);
 }
 .text_block{
     width: max(280px,45vw);
     text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    padding-right: 0.2rem;
+}
+footer button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 1rem 0.5rem 1rem 0;
+}
+footer p{
+    margin: 0 1rem;
+    align-self: center;
+}
+.footer_icon{
+    width: max(12px,1vw);
+    color: var(--dark_color);
+    animation: pulsar 0.5s infinite alternate, mudar_cor 1s infinite alternate;
+}
+.social_icons{
+    width: max(30px,2vw);
+    height: auto;
+    fill: var(--dark_color);
+}
+.social_icons:hover{
+    transform: scale(1.2);
+    animation: mudar_cor 0.2s;
+    fill: var(--pretty_color);
 }
