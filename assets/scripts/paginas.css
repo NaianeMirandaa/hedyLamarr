@@ -96,3 +96,26 @@ h2{
 .button_next:hover , .button_back:hover{
     transform: scale(1.2);
 }
+.galeria_filmes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max(280px, 40vw);
+}
+.container{
+    position: relative;
+    width: max(280px, 35vw);
+}
+.caixa_galeria{
+    overflow-x: auto;
+}
+.galeria{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.img_galeria{
+    width: 150px;
+    height: 250px;
+}
