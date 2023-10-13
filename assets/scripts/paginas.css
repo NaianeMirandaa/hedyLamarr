@@ -27,7 +27,6 @@ nav{
 section{
     display: flex;
     flex-direction: column;
-    
 }
 .bloco{
     display: none;
@@ -96,12 +95,23 @@ h2{
 .button_next:hover , .button_back:hover{
     transform: scale(1.2);
 }
+
+.caixa.filmes{
+    padding-bottom: 1rem;
+}
+
 .galeria_filmes{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: max(280px, 40vw);
+    padding-top: 10vw;
+}
+.galeria_filmes h2{
+    position: absolute;
+    top: 5%;
 }
 .container{
     position: relative;
@@ -109,13 +119,57 @@ h2{
 }
 .caixa_galeria{
     overflow-x: auto;
+    overflow: hidden;
+}
+.controls{
+    position: absolute;
+    margin: 0;
+    bottom: 30%;
+    z-index: 100;
+    fill: #111111;
+    padding: .8rem;
+    width: max(14px,3vw);
+    height: max(14px,3vw);
+    opacity: .3;
+}
+.controls:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.button_back--f{
+    left:0%;
+}
+.button_next--f{
+    right: 0%;
 }
 .galeria{
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+}
+.filme_galeria{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 .img_galeria{
     width: 150px;
     height: 250px;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+.filme_galeria p{
+    display: none;
+}
+.filme_galeria.filme_atual{
+    background-color: #111111;
+}
+.filme_galeria.filme_atual p{
+    display: block;
+    color: #d8cbd3;
+    font-size: max(0.9vw,10px);
+    padding: 0.5rem 0 0;
+}
+.filme_galeria.filme_atual .img_galeria{
+    opacity: 1;
 }
