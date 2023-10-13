@@ -15,12 +15,6 @@ body{
 button{
     padding: 0;
 }
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 2vw;
-}
 nav{
     display: flex;
     justify-content: end;
@@ -33,16 +27,31 @@ nav{
 section{
     display: flex;
     flex-direction: column;
-    padding: 0 6vw;
+    
 }
-.parte1, .parte2, .parte3, .parte4{
+.bloco{
     display: none;
 }
 .pagina_atual{
     display: block;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.caixa{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2vw;
+    position: fixed;
+    bottom: 5%;
 }
 
 h1{
@@ -76,7 +85,7 @@ h2{
     transform: rotate(3deg) translateX(4px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.button_next , .button_back{
+.button_next , .button_back, .button_redirection{
     margin: 0 0.5rem;
     background-color: #111111;
     color: #d8cbd3;
