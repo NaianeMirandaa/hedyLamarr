@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lexend:wght@200;400&display=swap');
-
-:root{
-    --dark_color: #111111;
-    --pretty_color: #d17ab0;
-}
-
 @keyframes pulsar {
     0%{
         scale: 1;
@@ -23,24 +16,11 @@
     }
 }
 
-*{
-    margin: 0;
-    font-family: 'Lemon', serif;
-    font-family: 'Lexend', sans-serif;
-}
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: url(../imagens/fundo_aquarela.jpg);
-    background-size: cover;
-}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 12vh;
 }
 h1{
     font-family: 'Lemon';
@@ -112,10 +92,10 @@ a{
     transform:scale(1.1);
     
 }
-.open{
+/* .open{
     position: static;
     display: block;
-}
+} */
 
 footer{
     display: flex;

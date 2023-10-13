@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Naiane Miranda">
+    <meta name="description" content="Site de apresentação da atriz e inventora Hedy Lamarr, desenvolvido como projeto de conclusão do curso de programação web para iniciantes da womakersCode">
+
+    <link rel="stylesheet" href="../scripts/padroes.css">
+    <link rel="stylesheet" href="../scripts/paginas.css">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <title>Curiosidades</title>
+</head>
+<body>
+    <nav>
+        <div class="conteudo_menu">
+            
+            <!-- <button>
+                <svg class="botao_principal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+            </button> -->
+            <div class="botoes_secundarios">
+                <button>
+                    <a href="vida.html"><svg class="botao_secundario" id="heart"  clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z" fill-rule="nonzero"/></svg></a>
+                </button>
+                <button>
+                    <a href="filmografia.html"><svg class="botao_secundario" id="movie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.266 7l12.734-2.625-.008-.042-1.008-4.333-21.169 4.196c-1.054.209-1.815 1.134-1.815 2.207v14.597c0 1.657 1.343 3 3 3h18c1.657 0 3-1.343 3-3v-14h-12.734zm8.844-5.243l2.396 1.604-2.994.595-2.398-1.605 2.996-.594zm-5.898 1.169l2.4 1.606-2.994.595-2.401-1.607 2.995-.594zm-5.904 1.171l2.403 1.608-2.993.595-2.406-1.61 2.996-.593zm-2.555 5.903l2.039-2h3.054l-2.039 2h-3.054zm4.247 10v-7l6 3.414-6 3.586zm4.827-10h-3.054l2.039-2h3.054l-2.039 2zm6.012 0h-3.054l2.039-2h3.054l-2.039 2z"/></svg></a>
+                </button>
+                
+                <button><a href="tecnologia.html"><svg class="botao_secundario" id="wireless"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.213 16.984c.97-1.028 2.308-1.664 3.787-1.664s2.817.636 3.787 1.664l-3.787 4.016-3.787-4.016zm-1.747-1.854c1.417-1.502 3.373-2.431 5.534-2.431s4.118.929 5.534 2.431l2.33-2.472c-2.012-2.134-4.793-3.454-7.864-3.454s-5.852 1.32-7.864 3.455l2.33 2.471zm-4.078-4.325c2.46-2.609 5.859-4.222 9.612-4.222s7.152 1.613 9.612 4.222l2.388-2.533c-3.071-3.257-7.313-5.272-12-5.272s-8.929 2.015-12 5.272l2.388 2.533z"/></svg></a></button>
+
+                <button><a href="curiosidades.html"><svg class="botao_secundario" id="curious"  xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M12.484 24v-5.991l2.224 2.352 4.042-2.12v2.416l-6.266 3.343zm-1-.003l-6.26-3.34v-2.465l4.088 2.245 2.172-2.385v5.945zm-3.7-15.313c.639.777 1.27 1.934 1.459 3.18l-3.208 1.77 5.449 2.891v.042l-2.381 2.614-4.599-2.525-.001.001-1.533-.883 2.254-2.481-2.254-2.121 4.814-2.488zm8.431.031l4.789 2.499-2.255 2.078.001.001 2.254 2.59-1.604.888-4.485 2.353-2.431-2.571v-.003l5.457-2.916-3.169-1.748c.194-1.321.695-2.266 1.443-3.171zm-3.967 5.285h-.521c-.137 0-.269-.046-.359-.127l-.693-.456h2.625l-.693.456c-.09.081-.221.127-.359.127zm1.077-1.167h-2.659c-.161 0-.292-.13-.292-.291 0-.161.131-.292.292-.292h2.659c.161 0 .291.131.291.292 0 .161-.13.291-.291.291zm.288-1.166h-3.251c0-2.304-1.874-3.301-1.874-5.383 0-2.172 1.748-3.367 3.498-3.367 1.75 0 3.502 1.197 3.502 3.367 0 2.082-1.875 3.047-1.875 5.383zm-6.267-5.334h-1.775v-1h1.821c-.039.22-.06.446-.06.676l.014.324zm11.058 0h-1.763l.013-.324c0-.23-.02-.456-.059-.676h1.809v1zm-9.998-3.02c-.227.248-.424.52-.584.811l-1.441-1.023.579-.815 1.446 1.027zm7.17-.005l1.439-1.022.579.815-1.432 1.018c-.161-.291-.359-.563-.586-.811zm-5.307-1.223c-.319.115-.621.261-.901.435l-.773-1.58.898-.44.776 1.585zm3.439-.004l.774-1.581.898.44-.77 1.574c-.281-.172-.583-.318-.902-.433zm-1.22-.272c-.163-.015-.328-.023-.495-.023-.171 0-.339.008-.505.024v-1.81h1v1.809z"/></svg></a></button>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

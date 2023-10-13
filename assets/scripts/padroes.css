@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lexend:wght@200;400&display=swap');
+
+:root{
+    --dark_color: #111111;
+    --pretty_color: #d17ab0;
+}
+
+*{
+    margin: 0;
+    font-family: 'Lemon', serif;
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../imagens/fundo_aquarela.jpg) space;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Lemon';
+    font-size: max(24px,5vw);
+    margin: 0.5rem 0;
+    color: var(--dark_color);
+}
+h2{
+    font-size: max(18px,1.9vw);
+    color: var(--dark_color);
+}
+h3{
+    font-size: max(14px,1.6vw);
+    color: var(--dark_color);
+}
+p{
+    font-size: max(12px,1.3vw);
+    color: var(--dark_color);
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao_secundario, .botao_principal{
+    width: max(30px,2vw);
+    height: max(30px,2vw);
+    background-color: var(--pretty_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.2); 
+}
+.botao_principal{
+    background-color: var(--dark_color);
+    fill: #DFDBE2;
+    cursor: pointer;  
+}
+
+.botao_principal:hover, .botao_secundario:hover{
+    transform:scale(1.1);  
+}
